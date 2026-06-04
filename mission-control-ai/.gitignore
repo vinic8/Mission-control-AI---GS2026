@@ -1,0 +1,17 @@
+# Segredos — NUNCA versionar
+.env
+
+# Bytecode / cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Sistema operacional / IDE
+.DS_Store
+.idea/
+.vscode/
