@@ -33,8 +33,8 @@ A **IA generativa** (gpt-oss:120b) recebe os dados reais da telemetria injetados
 1. Clone o repositório.
 2. Crie o ambiente virtual:
    ```bash
-   python -m venv .venv && source .venv/bin/activate
-   # Windows: python -m venv .venv && .venv\Scripts\activate
+   python -m venv .venv
+   .venv\Scripts\activate
    ```
 3. Instale as dependências:
    ```bash
