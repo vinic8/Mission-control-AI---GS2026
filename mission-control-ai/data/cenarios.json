@@ -1,0 +1,37 @@
+{
+  "nominal": {},
+  "sobreaquecimento_transponder": {
+    "temp_transponder_c": [78, 94],
+    "throughput_feixe_mbps": [90, 140],
+    "usuarios_conectados": [1800, 3200]
+  },
+  "degradacao_antena": {
+    "saude_antena_pct": [55, 80],
+    "throughput_feixe_mbps": [110, 160],
+    "snr_db": [8, 12],
+    "usuarios_conectados": [1500, 3000]
+  },
+  "perda_apontamento": {
+    "erro_beam_steering_deg": [0.45, 1.20],
+    "throughput_feixe_mbps": [70, 130],
+    "usuarios_conectados": [400, 1500]
+  },
+  "bateria_critica": {
+    "bateria_pct": [8, 19],
+    "throughput_feixe_mbps": [120, 170],
+    "usuarios_conectados": [1200, 2600]
+  },
+  "congestionamento": {
+    "latencia_uplink_ms": [95, 180],
+    "throughput_feixe_mbps": [80, 130],
+    "snr_db": [9, 13],
+    "usuarios_conectados": [6000, 7800]
+  },
+  "blackout_total": {
+    "throughput_feixe_mbps": 0,
+    "snr_db": 2,
+    "saude_antena_pct": 35,
+    "erro_beam_steering_deg": 1.8,
+    "usuarios_conectados": 0
+  }
+}
