@@ -65,8 +65,8 @@ A **IA generativa** (gpt-oss:120b) recebe os dados reais da telemetria injetados
 ---
 
 ## Demonstração
-![Banner inicial da missão](assets/)
-![Alerta crítico com análise da IA](assets/)
+![Banner inicial da missão] em (assets/)
+![Alerta crítico com análise da IA] em (assets/)
 
 ---
 
