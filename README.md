@@ -1,16 +1,12 @@
-# 🚀 Mission Control AI — ConnectSat
+# Mission Control AI — ConnectSat
 
 Sistema de monitoramento operacional de um satélite de telecomunicações em órbita baixa (LEO) voltado à **conectividade rural e inclusão digital**. Recebe telemetria simulada, detecta anomalias por lógica Python e usa IA generativa (gpt-oss:120b via Ollama Cloud) para analisar o estado da missão em linguagem natural — sempre amarrando cada anomalia ao seu **impacto em solo**.
 
 ---
 
-## 👥 Integrantes
-- Nome Completo — RM: XXXXXX — Turma: XXXXX
-- Nome Completo — RM: XXXXXX — Turma: XXXXX
-- Nome Completo — RM: XXXXXX — Turma: XXXXX
-- Nome Completo — RM: XXXXXX — Turma: XXXXX
-
-> Preencha com os dados reais do grupo antes de entregar.
+## Integrantes
+- Vinicius Molena RM-571270
+- Gabriel Vilas RM- 571603
 
 ---
 
@@ -21,19 +17,19 @@ A **IA generativa** (gpt-oss:120b) recebe os dados reais da telemetria injetados
 
 ---
 
-## 🎯 Persona atendida
+## Persona atendida
 **Engenheiro(a) de NOC da operadora** (persona principal), com o sistema também falando a linguagem do **coordenador de inclusão digital** e do **cliente final em comunidade rural**. Justificativa: o NOC precisa de diagnóstico técnico e priorização imediatos; o diferencial do projeto é traduzir esse diagnóstico no impacto humano de cada anomalia, atendendo também quem não é técnico.
 
 ---
 
-## 🧰 Tecnologias utilizadas
+# Tecnologias utilizadas
 - Python 3.10+
 - Ollama Cloud API (modelo **gpt-oss:120b**)
 - Bibliotecas: `ollama`, `python-dotenv`, `rich`, `prompt-toolkit`, `pyfiglet`
 
 ---
 
-## ▶️ Como executar
+## Como executar
 1. Clone o repositório.
 2. Crie o ambiente virtual:
    ```bash
@@ -68,16 +64,14 @@ A **IA generativa** (gpt-oss:120b) recebe os dados reais da telemetria injetados
 
 ---
 
-## 🖼 Demonstração
-![Banner inicial da missão](assets/screenshot_banner.png)
-![Alerta crítico com análise da IA](assets/screenshot_analise.png)
-
-> Capture os dois prints com o sistema rodando (instruções em `assets/LEIA-ME.txt`).
+## Demonstração
+![Banner inicial da missão](assets/)
+![Alerta crítico com análise da IA](assets/)
 
 ---
 
-## 🧠 System Prompt
-O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_prompt.md). Ele define **papel** (analista de NOC da ConnectSat), **escopo** (apenas o estado da missão), **restrições** (usar só os dados fornecidos, não reclassificar a severidade decidida em Python, sempre conectar com a Terra), **tom** (sala de controle) e **formato de saída** (Markdown estruturado com a seção obrigatória *🌎 Impacto em solo*).
+## System Prompt
+O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_prompt.md). Ele define **papel** (analista de NOC da ConnectSat), **escopo** (apenas o estado da missão), **restrições** (usar só os dados fornecidos, não reclassificar a severidade decidida em Python, sempre conectar com a Terra), **tom** (sala de controle) e **formato de saída** (Markdown estruturado com a seção obrigatória * Impacto em solo*).
 
 ### Decisões de design do prompt (iterações)
 - **v1 — genérico demais.** *"Você é um assistente que analisa dados de satélite."* Resultado: a IA respondia qualquer coisa e raramente citava o impacto terrestre. Sem papel nem restrições, não condicionava nada.
@@ -88,7 +82,7 @@ O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_pr
 
 ---
 
-## 🧪 Cenários de teste demonstrados
+## Cenários de teste demonstrados
 1. **Operação normal** (`/cenario nominal`) — todos os parâmetros dentro da faixa; nível 🟢 OK.
 2. **Temperatura crítica** (`/cenario sobreaquecimento_transponder`) — transponder acima de 78 °C; dispara modo seguro térmico + análise da IA.
 3. **Bateria crítica em eclipse** (`/cenario bateria_critica`) — aciona modo economia de energia; impacto: comunidades offline até recarregar.
@@ -99,7 +93,7 @@ O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_pr
 
 ---
 
-## ⚠️ Limitações conhecidas
+## Limitações conhecidas
 - A telemetria é **simulada** (aleatória dentro de faixas plausíveis), não vem de um satélite real.
 - A IA analisa um **instantâneo** de telemetria, não uma série contínua: não há causa-raiz confirmada nem previsão temporal real.
 - As respostas da IA são **não-determinísticas**; mesmo com `temperature=0.3` pode haver variação de redação entre execuções.
@@ -109,5 +103,5 @@ O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_pr
 
 ---
 
-## 🎥 Vídeo de demonstração
-🎥 [Assistir no YouTube](https://www.youtube.com/watch?v=COLE_O_LINK_AQUI)
+## Vídeo de demonstração
+[Assistir no YouTube](https://www.youtube.com/watch?v=COLE_O_LINK_AQUI)
