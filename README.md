@@ -10,7 +10,7 @@ Sistema de monitoramento operacional de um satélite de telecomunicações em ó
 
 ---
 
-## 🛰 O que o projeto faz
+## O que o projeto faz
 A Mission Control AI monitora a telemetria de um satélite de telecom LEO (estilo Starlink/OneWeb) e classifica o estado da missão em **🟢 OK / 🟡 ATENÇÃO / 🔴 CRÍTICO** usando **regras de threshold em Python** (`src/alertas.py`). Diante de condições críticas, o sistema dispara **respostas automáticas** (modo seguro térmico, economia de energia, failover de antena, recalibração de apontamento, balanceamento de carga, modulação adaptativa).
 
 A **IA generativa** (gpt-oss:120b) recebe os dados reais da telemetria injetados no prompt e produz uma análise contextual: situação geral, análise técnica, **impacto em solo** (escolas, postos de saúde, negócios rurais) e recomendações. A IA **explica**; o código **decide** a severidade.
