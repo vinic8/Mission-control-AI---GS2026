@@ -104,4 +104,4 @@ O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_pr
 ---
 
 ## Vídeo de demonstração
-[Assistir no YouTube]([https://youtu.be/AFO91_RZ2pc])
+[Assistir no YouTube](https://youtu.be/AFO91_RZ2pc)
