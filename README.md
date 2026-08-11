@@ -4,12 +4,6 @@ Sistema de monitoramento operacional de um satélite de telecomunicações em ó
 
 ---
 
-## Integrantes
-- Vinicius Molena RM-571270
-- Gabriel Vilas RM- 571603
-
----
-
 ## O que o projeto faz
 A Mission Control AI monitora a telemetria de um satélite de telecom LEO (estilo Starlink/OneWeb) e classifica o estado da missão em **🟢 OK / 🟡 ATENÇÃO / 🔴 CRÍTICO** usando **regras de threshold em Python** (`src/alertas.py`). Diante de condições críticas, o sistema dispara **respostas automáticas** (modo seguro térmico, economia de energia, failover de antena, recalibração de apontamento, balanceamento de carga, modulação adaptativa).
 
@@ -101,7 +95,3 @@ O system prompt completo está em [`prompts/system_prompt.md`](prompts/system_pr
 - Requer **chave válida do Ollama Cloud** e internet; sem isso, a CLI sobe normalmente mas a análise retorna uma mensagem de erro amigável (a lógica de alertas/`/status` continua funcionando offline).
 - A `usuarios_conectados` baixa é tratada como **indicador de impacto**, não necessariamente como causa-raiz.
 
----
-
-## Vídeo de demonstração
-[Assistir no YouTube](https://youtu.be/AFO91_RZ2pc)
