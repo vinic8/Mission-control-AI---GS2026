@@ -1,9 +1,5 @@
 """src/alertas.py — Thresholds, regras de decisão e respostas automáticas.
 
-REGRA DE OURO DO PROJETO:
-    Toda a decisão "isto é crítico ou não" vive AQUI, em Python determinístico.
-    A IA (system_prompt) apenas EXPLICA e CONTEXTUALIZA o que o código já
-    classificou — ela nunca decide a severidade.
 
 Cada parâmetro carrega, além dos limiares, o seu IMPACTO TERRESTRE: o que aquela
 anomalia significa para escolas rurais, postos de saúde / telemedicina e
